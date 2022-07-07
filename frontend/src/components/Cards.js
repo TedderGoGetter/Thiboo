@@ -33,14 +33,36 @@ function Cards() {
 
     const [centerSlide, setCenterSlide] = useState(1)
 
-    const clickLeft = () => {setCenterSlide(centerSlide - 1)}
-    const clickRight = () => {setCenterSlide(centerSlide + 1)}
+    const clickLeft = () => {
+        if (centerSlide > 0) {
+            setCenterSlide(centerSlide - 1)
+            console.log('if was triggered')
+        }
+        else {
+            setCenterSlide(centerSlide + 4)
+            console.log('else was triggered')
+        } 
+    }
+
+
+    const clickRight = () => {
+        if (centerSlide < 4) {
+            setCenterSlide(centerSlide + 1)
+            console.log('if was triggered')
+        }
+        else {
+            setCenterSlide(centerSlide - 4)
+            console.log('else was triggered')
+        }         
+    }
 
     return(
         <div>
-            <button>left</button>
-            
-            <button>right</button>
+            <button onClick={clickLeft}>left</button>
+
+                {slides[centerSlide].content()}
+
+            <button onClick={clickRight}>right</button>
         </div>
 
 
