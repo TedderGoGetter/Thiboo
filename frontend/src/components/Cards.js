@@ -1,87 +1,31 @@
 import YoutubeEmbed from './YoutubeEmbed'
 import './CardsNYT.css'
-import {useState} from 'react'
+import {Carousel} from '3d-react-carousal';
 
-const slides = [
-    {
-        title: 'Video 1',
-        content: () => <YoutubeEmbed className="embeds" embedId="OGV5rJ40r4w" />
-    },
-    {
-        title: 'Video 2',
-        content: () => <YoutubeEmbed className="embeds" embedId="w19wmJCgGsc" />
-    },
-    {
-        title: 'Video 3',
-        content: () => <YoutubeEmbed className="embeds" embedId="JDRad1L-Iuk" />
-    },
-    {
-        title: 'Video 4',
-        content: () => <YoutubeEmbed className="embeds" embedId="hYd-hJ3Khyk" />
-    },
-    {
-        title: 'Video 5',
-        content: () => <YoutubeEmbed className="embeds" embedId="0BHSS8tL1b4" />
-    },
-
+let slides = [
+    <YoutubeEmbed className="embeds" embedId="w19wmJCgGsc" />,
+    <YoutubeEmbed className="embeds" embedId="OGV5rJ40r4w" />,
+    <YoutubeEmbed className="embeds" embedId="hYd-hJ3Khyk" />,
+    <YoutubeEmbed className="embeds" embedId="JDRad1L-Iuk" />,
+    <YoutubeEmbed className="embeds" embedId="0BHSS8tL1b4" />
 ]
 
-
+const callback = function(index){
+    console.log("callback",index);
+}
 
 
 function Cards() {
 
-    const [centerSlide, setCenterSlide] = useState(4)
-
-
-
-    const clickLeft = () => {
-        if (centerSlide === 0) {
-            setCenterSlide(centerSlide + 4)
-            console.log('if was triggered')
-        }
-        else {
-            setCenterSlide(centerSlide - 1)
-            console.log('else was triggered')
-        } 
-    }
-
-
-    const clickRight = () => {
-        if (centerSlide === 4) {
-            setCenterSlide(centerSlide - 4)
-            console.log('if was triggered')
-        }
-        else {
-            setCenterSlide(centerSlide + 1)
-            console.log('else was triggered')
-        }         
-    }
 
 
     return(
+
         <div>
-            <button onClick={clickLeft}>left</button>
-
-                {slides[centerSlide === 0 ? centerSlide + 4 : centerSlide - 1].content()}
-                {slides[centerSlide].content()}
-                {slides[centerSlide === 4 ? centerSlide - 4 : centerSlide + 1].content()}
-                
-
-            <button onClick={clickRight}>right</button>
+            <Carousel slides={slides} autoplay={false} onSlideChange={callback}/>
         </div>
 
 
-        /*
-
-        <div className="cardstack">
-            <YoutubeEmbed className="embeds" embedId="OGV5rJ40r4w" />
-            <YoutubeEmbed className="embeds" embedId="w19wmJCgGsc" />
-            <YoutubeEmbed className="embeds" embedId="JDRad1L-Iuk" />
-            <YoutubeEmbed className="embeds" embedId="hYd-hJ3Khyk" />
-            <YoutubeEmbed className="embeds" embedId="0BHSS8tL1b4" />
-        </div>
-        */
     )
 
 }
