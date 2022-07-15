@@ -1,5 +1,5 @@
 import YoutubeEmbed from './YoutubeEmbed'
-import './CardsNYT.css'
+import './CardsNYT.scss'
 import {Carousel} from '3d-react-carousal';
 
 let slides = [
@@ -22,7 +22,7 @@ function Cards() {
     return(
 
         <div>
-            <Carousel slides={slides} autoplay={false} onSlideChange={callback}/>
+            <Carousel slides={slides} autoplay={false} onSlideChange={callback} className="carousel"/>
         </div>
 
 

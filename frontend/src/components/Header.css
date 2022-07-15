@@ -1,4 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
 .header {
+    
     display:flex;
     justify-content:space-between;
+    z-index: 2;
+
+    font-family: 'Raleway', sans-serif;
+    color:antiquewhite;
+    font-size: 0.85em;
+    /* background-color: blue; */
+
+   
+}
+
+.logo {
+    animation:wobble 9s;
+    animation-iteration-count: infinite;
+    z-index: 5;
+
+    animation:blip 10s;
+    animation-iteration-count: infinite;
+}
+
+.abt
+ {
+    margin-top:2.5vw;
+    align-items: flex-end;
+    /* background-color:pink; */
+}
+
+.cloud1 {
+
+    position:absolute;
+    z-index: 1;
+
+    
+    width:43%;
+    height:auto;
+    bottom: 68%;
+    left:6%;
+
+    animation:clouds 10s;
+    animation-iteration-count: infinite;
+
+
+}
+
+.cloud2 {
+
+    position:absolute;
+    z-index: 1;
+
+    
+    width:43%;
+    height:auto;
+    bottom: 68%;
+    right: 59%;
+
+    animation:clouds 7s;
+    animation-iteration-count: infinite;
+
+
+}
+
+.cloud3 {
+
+    position:absolute;
+    z-index: 1;
+
+    
+    width:43%;
+    height:auto;
+    bottom: 67%;
+    right: 55%;
+
+    animation:cloudsReduce 5s;
+    animation-iteration-count: infinite;
+
+
+}
+
+
+
+
+@keyframes wobble {
+    0% { transform:  rotate(0deg); }
+    10% { transform: rotate(-0.1deg); }
+    20% { transform: rotate(0.1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(0.1deg); }
+    50% { transform: rotate(-0.1deg); }
+
+  }
+
+@keyframes clouds {
+    0%  {opacity: 0.6}
+    25% {opacity: 1}
+    50% {opacity: 0.4}
+    75% {opacity: 1}
+    100% {opacity: 0.6}
+}
+
+@keyframes cloudsReduce {
+    0%  {opacity: 0.4}
+    25% {opacity: 0.8}
+    50% {opacity: 0.2}
+    75% {opacity: 0.8}
+    100% {opacity: 0.4}
+}
+
+@keyframes blip {
+    0% {opacity:1}
+
+    20% {opacity:1}
+    20.4% {opacity:0.4}
+    20.8% {opacity:1}
+
+    23% {opacity:1}
+    23.4% {opacity:0.6}
+    23.8% {opacity:1}
 }
