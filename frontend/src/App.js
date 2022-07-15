@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import Header from './components/Header'
 import Cards from './components/Cards'
+import Modal from './components/Modal'
 import './App.scss';
 
 
@@ -25,9 +26,10 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="appContainer">
       <Header aboutClick={modalClick} contactClick={contactClick}/>
-      <Cards />
+      <Modal currentClass={currentClass}/>
+      {/* <Cards /> */}
     </div>
 
   );

@@ -1,88 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
+.headerContainer {
+    display:flex;
+    width:100vw;
+    padding:0px;
+    margin:0px;
+    justify-content: center;
+}
+
 .header {
     
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
+    width:60%;
+    min-width:600px;
+
     z-index: 2;
 
     font-family: 'Raleway', sans-serif;
     color:antiquewhite;
     font-size: 0.85em;
-    /* background-color: blue; */
 
    
-}
-
-.logo {
-    animation:wobble 9s;
-    animation-iteration-count: infinite;
-    z-index: 5;
-
-    animation:blip 10s;
-    animation-iteration-count: infinite;
 }
 
 .abt
  {
     margin-top:2.5vw;
     align-items: flex-end;
-    /* background-color:pink; */
 }
 
-.cloud1 {
 
-    position:absolute;
-    z-index: 1;
-
+.logoContainer {
     
-    width:43%;
-    height:auto;
-    bottom: 68%;
-    left:6%;
-
-    animation:clouds 10s;
-    animation-iteration-count: infinite;
-
-
-}
-
-.cloud2 {
-
-    position:absolute;
-    z-index: 1;
-
     
-    width:43%;
-    height:auto;
-    bottom: 68%;
-    right: 59%;
 
-    animation:clouds 7s;
-    animation-iteration-count: infinite;
-
-
-}
-
-.cloud3 {
-
-    position:absolute;
-    z-index: 1;
-
+    .logo{
+        position:relative;
+        width:300px;
+        height:auto;
+        z-index: 5;
+    }
     
-    width:43%;
-    height:auto;
-    bottom: 67%;
-    right: 55%;
+    .cloud {
+        position:absolute;
+        z-index: 1;
+        width:43%;
+        height:auto;
+        left: 40%;
+    }
 
-    animation:cloudsReduce 5s;
-    animation-iteration-count: infinite;
+    .cloud1 {
+        animation:clouds 10s;
+        animation-iteration-count: infinite;
+
+    }
+
+    .cloud2 {
+        animation:clouds 7s;
+        animation-iteration-count: infinite;
+    }
+
+    .cloud3 {
+        animation:cloudsReduce 5s;
+        animation-iteration-count: infinite;
+    }
 
 
 }
-
-
-
 
 @keyframes wobble {
     0% { transform:  rotate(0deg); }

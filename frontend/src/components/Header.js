@@ -1,6 +1,6 @@
-import './Header.css'
+import './Header.scss'
 
-const mainLogo = new URL('../images/Thiboo.png', import.meta.url)
+const mainLogo = new URL('../images/Logotransparent.png', import.meta.url)
 
 const cloud1 = new URL('../images/Cloud1.png', import.meta.url)
 const cloud2 = new URL('../images/Cloud2.png', import.meta.url)
@@ -12,22 +12,32 @@ function Header({aboutClick, contactClick}) {
 
 
     return (
-        <div>
-            <img src={cloud1} alt="" className="cloud1"></img>
-            <img src={cloud2} alt="" className="cloud2"></img>
-            <img src={cloud3} alt="" className="cloud3"></img>
+        <div className='headerContainer'>
 
-            <div class="header">
-                <img src={mainLogo} alt="ThibaultTresca" className='logo'></img>
+            <nav className="header">
+        
+
+                <a href="/" target="_blank" onClick={
+                        (e) => aboutClick(e)
+                        }><h3 className='abt' >ABOUT</h3>
+                </a>
+
+                <div className="logoContainer">
+                    <img src={mainLogo} alt="ThibaultTresca" className='logo'></img>
+                    <img src={cloud1} alt="" className={"cloud cloud1"}></img>
+                    <img src={cloud2} alt="" className={"cloud cloud2"}></img>
+                    <img src={cloud3} alt="" className={"cloud cloud3"}></img>                    
+                </div>    
                 
+                    
+
 
                 <a href="/" target="_blank" onClick={
-                    (e) => aboutClick(e)
-                    }><h3 className='abt' >ABOUT</h3></a>
-                <a href="/" target="_blank" onClick={
-                    (e) => contactClick(e)
-                }><h3 className='abt' >CONTACT</h3></a>
-            </div>
+                        (e) => contactClick(e)
+                    }><h3 className='abt' >CONTACT</h3>
+                </a>
+            </nav>
+        
         </div>
     )
 
