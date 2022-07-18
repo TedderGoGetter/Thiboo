@@ -8,7 +8,7 @@ import './App.scss';
 
 function App() {
 
-  //Modal related stuff
+  //Modal related
   const [isOpen, setIsOpen] = useState(false)
   const [currentClass, setCurrentClass] = useState('closedModal')
   
@@ -25,6 +25,12 @@ function App() {
     e.preventDefault()
     console.log("Contact clicked")
   }
+
+
+
+
+      
+
 
   return (
     <div className="appContainer">
