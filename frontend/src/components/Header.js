@@ -5,6 +5,7 @@ const mainLogo = new URL('../images/Logotransparent.png', import.meta.url)
 const cloud1 = new URL('../images/Cloud1.png', import.meta.url)
 const cloud2 = new URL('../images/Cloud2.png', import.meta.url)
 const cloud3 = new URL('../images/Cloud3.png', import.meta.url)
+const cloud4 = new URL('../images/Cloud4.png', import.meta.url)
 
 function Header({aboutClick, contactClick}) {
 
@@ -26,7 +27,8 @@ function Header({aboutClick, contactClick}) {
                     <img src={mainLogo} alt="ThibaultTresca" className='logo'></img>
                     <img src={cloud1} alt="" className={"cloud cloud1"}></img>
                     <img src={cloud2} alt="" className={"cloud cloud2"}></img>
-                    <img src={cloud3} alt="" className={"cloud cloud3"}></img>                    
+                    <img src={cloud3} alt="" className={"cloud cloud3"}></img>  
+                    <img src={cloud4} alt="" className={"cloud cloud4"}></img>                    
                 </div>    
                 
                     

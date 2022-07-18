@@ -15,39 +15,42 @@
     width:60%;
     min-width:600px;
 
-    z-index: 2;
+    // z-index: 2;
 
     font-family: 'Raleway', sans-serif;
     color:antiquewhite;
-    font-size: 0.85em;
+    font-size: 1.1em;
 
    
 }
 
 .abt
  {
-    margin-top:2.5vw;
+    margin-top:3.3vw;
     align-items: flex-end;
 }
 
 
 .logoContainer {
+
+    display:flex;
     
     
 
     .logo{
         position:relative;
-        width:300px;
+        width:350px;
         height:auto;
-        z-index: 5;
+        z-index: 2;
     }
     
     .cloud {
-        position:absolute;
-        z-index: 1;
-        width:43%;
-        height:auto;
-        left: 40%;
+        position: absolute;
+        z-index: -1;
+        width: 35%;
+        height: auto;
+        left: 432px;
+        top: -60px;
     }
 
     .cloud1 {
@@ -62,7 +65,12 @@
     }
 
     .cloud3 {
-        animation:cloudsReduce 5s;
+        animation:clouds 5s;
+        animation-iteration-count: infinite;
+    }
+
+    .cloud4 {
+        animation:clouds 20s;
         animation-iteration-count: infinite;
     }
 
