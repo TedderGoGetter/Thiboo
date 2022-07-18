@@ -1,13 +1,14 @@
 import {useState} from 'react'
 import Header from './components/Header'
-import Cards from './components/Cards'
+import Footer from './components/Footer'
 import Modal from './components/Modal'
+import Cards from './components/Cards'
 import './App.scss';
 
 
 function App() {
 
-  //Modal
+  //Modal related stuff
   const [isOpen, setIsOpen] = useState(false)
   const [currentClass, setCurrentClass] = useState('closedModal')
   
@@ -29,7 +30,8 @@ function App() {
     <div className="appContainer">
       <Header aboutClick={modalClick} contactClick={contactClick}/>
       <Modal currentClass={currentClass}/>
-      {/* <Cards /> */}
+      <Cards />
+      <Footer />
     </div>
 
   );
