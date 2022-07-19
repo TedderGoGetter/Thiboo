@@ -29,6 +29,7 @@ function Cards() {
     console.log(embedSize[1])
   }
 
+  //e.target / e.currentTarget .classList
 
     return(
 
@@ -37,6 +38,8 @@ function Cards() {
             <YoutubeEmbed embedSize={embedSize} className={"embeds vid2"} embedId="OGV5rJ40r4w" />
             <YoutubeEmbed embedSize={embedSize} className={"embeds vid3"} embedId="_bbpZvUR4Fk" />
             <button onClick={youtubeClick}></button>
+            <button ></button>
+            <button></button>
         </div>
 
 
