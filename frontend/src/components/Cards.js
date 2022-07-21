@@ -1,4 +1,5 @@
 import YoutubeEmbed from './YoutubeEmbed'
+import ReactYoutube from './ReactYoutube'
 import './CardsNYT.scss'
 import {useState} from 'react'
 
@@ -31,15 +32,23 @@ function Cards() {
 
   //e.target / e.currentTarget .classList
 
+  
+
     return(
 
         <div className='cardsContainer'>
-            <YoutubeEmbed embedSize={embedSize} className={"embeds vid1"} embedId="w19wmJCgGsc" />
+
+
+            <ReactYoutube embedId="OGV5rJ40r4w" />
+
+
+
+            {/* <YoutubeEmbed embedSize={embedSize} className={"embeds vid1"} embedId="w19wmJCgGsc" />
             <YoutubeEmbed embedSize={embedSize} className={"embeds vid2"} embedId="OGV5rJ40r4w" />
             <YoutubeEmbed embedSize={embedSize} className={"embeds vid3"} embedId="_bbpZvUR4Fk" />
             <button onClick={youtubeClick}></button>
             <button ></button>
-            <button></button>
+            <button></button> */}
         </div>
 
 
