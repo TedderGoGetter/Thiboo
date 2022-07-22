@@ -36,7 +36,7 @@ function App() {
     <div className="appContainer">
       <Header aboutClick={modalClick} contactClick={contactClick}/>
       <Modal currentClass={currentClass}/>
-      <Cards />
+      <Cards/>
       <Footer />
     </div>
 
