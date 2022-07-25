@@ -2,7 +2,7 @@ import {useState} from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Modal from './components/Modal'
-import Cards from './components/Cards'
+import ReactYoutube from './components/ReactYoutube'
 import './App.scss';
 
 
@@ -36,7 +36,7 @@ function App() {
     <div className="appContainer">
       <Header aboutClick={modalClick} contactClick={contactClick}/>
       <Modal currentClass={currentClass}/>
-      <Cards/>
+      <ReactYoutube/>
       <Footer />
     </div>
 

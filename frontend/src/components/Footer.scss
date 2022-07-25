@@ -5,16 +5,21 @@
     height: auto;
 }
 
-.icons {
-    height:auto;
-    padding:5px;
-
+.yt{
+    width: 22px;
+    padding:4px;
+    padding-top:6px;
 }
 
-.yt1 {
-    width: 20px;  
+.yt:hover {
+    opacity:0.4;
 }
 
-.li1 {
+.li {
     width: 20px;
+    padding:4px;
+}
+
+.li:hover {
+    opacity:0.4;
 }
