@@ -41,10 +41,11 @@ const ReactYoutube = () => {
 
     const onStateChange = (e, video) => {
 
+
         if (e.data === 1) {
-            console.log("player is playing")
             console.log(video)
             console.log(ref1.current)
+            
             //ref1.current.destroyPlayer()
         }
 
@@ -52,17 +53,16 @@ const ReactYoutube = () => {
         // e.target.mute()
 
         //onPlayerStateChange get it the other way around. Let the videos figure out when another video's state has changed and then use e.target.
-
-        
-
     }
+
+
 
     return (
         <div className='youtubeContainer'>
 
-            <YouTube ref={ref1} videoId="JDRad1L-Iuk" opts={opts1} onStateChange={e => onStateChange(e, 'video1')}/>
-            <YouTube ref={ref2} videoId="OGV5rJ40r4w" opts={opts2} onStateChange={e => onStateChange(e, 'video2')}/>
-            <YouTube ref={ref3} videoId="_bbpZvUR4Fk" opts={opts3} onStateChange={e => onStateChange(e, 'video3')}/>
+            <YouTube ref={ref1} className="video1" videoId="JDRad1L-Iuk" opts={opts1} onStateChange={e => onStateChange(e, 'video1')}/>
+            <YouTube ref={ref2} className="video2" videoId="OGV5rJ40r4w" opts={opts2} onStateChange={e => onStateChange(e, 'video2')}/>
+            <YouTube ref={ref3} className="video3" videoId="_bbpZvUR4Fk" opts={opts3} onStateChange={e => onStateChange(e, 'video3')}/>
 
         </div>
     )

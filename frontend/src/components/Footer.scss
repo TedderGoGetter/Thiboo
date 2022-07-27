@@ -3,23 +3,28 @@
     justify-content: center;
     width: 100vw;
     height: auto;
+    position:fixed;
+
+    left:0;
+    bottom:20px;
+    right:0;
 }
 
 .yt{
     width: 22px;
     padding:4px;
     padding-top:6px;
-}
 
-.yt:hover {
-    opacity:0.4;
+    &:hover {
+        opacity:0.4;
+    }
 }
 
 .li {
     width: 20px;
     padding:4px;
-}
 
-.li:hover {
-    opacity:0.4;
+    &:hover {
+        opacity:0.4;
+    }
 }
