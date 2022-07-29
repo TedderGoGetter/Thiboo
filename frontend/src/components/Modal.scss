@@ -2,7 +2,7 @@
 
 
 .closedModal {
-    display:none;
+  height: 40vw;
 }
 
 .aboutModal, .contactModal {
@@ -23,6 +23,7 @@
   animation:aboutOpen 0.8s;
   height: 40vw;
   top: 20%;
+  
 }
 
 .contactModal {
@@ -32,7 +33,7 @@
 }
 
 .about {
-    // display:none;
+  
 }
 
 .portrait {
@@ -54,7 +55,7 @@
   animation: textIntro 1.5s;
 }
 
-//codepen  
+//contact form
   .screen-body, button, input {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -162,6 +163,11 @@
   }
 
 
+  .app-title, .ownEmail, .ownEmail2, .app-form-control, .app-form-button {
+    animation:textIntro 1.5s;
+  }
+
+
 
 @keyframes aboutOpen {
 
@@ -203,7 +209,7 @@
 
   100% {
       width: 40vw;
-      height: 40vw;
+      height: 28vw;
   }
 }
 
