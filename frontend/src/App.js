@@ -12,17 +12,20 @@ function App() {
   const [isOpen, setIsOpen] = useState(false)
   const [currentClass, setCurrentClass] = useState('closedModal')
   
-  const modalClick = (e) => {
+  const aboutClick = (e) => {
       e.preventDefault()
       if (isOpen) setCurrentClass('closedModal')
-      if (!isOpen) setCurrentClass('openModal')
+      if (!isOpen) setCurrentClass('aboutModal')
       setIsOpen(!isOpen)
-      console.log("Modal clicked")
+      console.log("About clicked")
       
   }
 
   const contactClick = (e) => {
     e.preventDefault()
+    if (isOpen) setCurrentClass('closedModal')
+    if (!isOpen) setCurrentClass('contactModal')
+    setIsOpen(!isOpen)
     console.log("Contact clicked")
   }
 
@@ -34,7 +37,7 @@ function App() {
 
   return (
     <div className="appContainer">
-      <Header aboutClick={modalClick} contactClick={contactClick}/>
+      <Header aboutClick={aboutClick} contactClick={contactClick}/>
       <Modal currentClass={currentClass}/>
       <ReactYoutube/>
       <Footer />
