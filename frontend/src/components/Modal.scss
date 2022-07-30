@@ -55,6 +55,7 @@
   animation: textIntro 1.5s;
 }
 
+
 //contact form
   .screen-body, button, input {
     font-family: 'Raleway', sans-serif;
@@ -122,7 +123,47 @@
     color: #888;
     margin-right:0px;
   }
+
+  .contactGroup {
+    margin-left:230px;
+  }
+
+  .igLogo {
+    width:17px;
+    height:auto;
+    float:left;
+    opacity:0.7;
+  }
+
+  .igLink {    
+    margin-top: 20px;
+    color: #888;
+  }
+
   
+  .igs:hover {
+    color: #eaeaea;
+    opacity:1;
+  }
+
+  .tokyoTag:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 90px;
+    width: 30px;
+    margin-top: 3px;
+    height: 4px;
+    background: #ea1d6f;
+  }
+  
+
+  .app-title, .ownEmail, .ownEmail2, .app-form-control, .app-form-button {
+    animation:textIntro 1.5s;
+  }
+
+
+  //unused form stuff.
   .app-form-group {
     margin-bottom: 15px;
     margin-left:0%
@@ -163,9 +204,6 @@
   }
 
 
-  .app-title, .ownEmail, .ownEmail2, .app-form-control, .app-form-button {
-    animation:textIntro 1.5s;
-  }
 
 
 

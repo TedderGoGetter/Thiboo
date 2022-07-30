@@ -3,6 +3,7 @@ import './Modal.scss'
 const Modal = ({currentClass}) => {
 
     const terryCrews = new URL('../images/TerryCrews.jpg', import.meta.url)
+    const igLogo = new URL('../images/igwhite.png', import.meta.url)
 
 
     if (currentClass === 'aboutModal') {
@@ -29,13 +30,17 @@ const Modal = ({currentClass}) => {
                     <div className="screen-body">
                         <div className="screen-body-item left">
                             <div className="app-title">
-                                <span>CONTACT</span>
+                                <span>THIBAULT</span>
+                                <span>TRESCA</span>
                             </div>
-                            <div className="ownEmail">thibault.tresca</div>
-                            <div className="ownEmail2">               @gmail.com</div>
+                            <div className="ownEmail contactGroup">thibault.tresca</div>
+                            <div className="ownEmail2 contactGroup">               @gmail.com</div>
+                            <a href="https://instagram.com/thibault.tresca" target="_blank" rel="noreferrer" className="igLink igs contactGroup"><img className="igLogo igs" src={igLogo} alt="ig:"/> : @thibault.tresca</a>
+                            <div className="tokyoTag ownEmail contactGroup">Tokyo, Japan</div>
                         </div>
-                        <div className="screen-body-item">
-                            <div className="app-form">
+                       {/* <div className="screen-body-item">
+                            
+                            {/* <div className="app-form">
                                 <div className="app-form-group">
                                     <input className="app-form-control" placeholder="NAME" value="Tupac Shakur"/>
                                     <input className="app-form-control" placeholder="EMAIL"/>
@@ -45,10 +50,10 @@ const Modal = ({currentClass}) => {
                                     <input className="app-form-control" placeholder="MESSAGE"/>
                                 </div>
                                 <div className="app-form-group buttons">
-                                    <button className="app-form-button">SEND</button>
+                                    <button className="app-form-button">SEND</button> 
                                 </div>
                             </div>
-                        </div>
+                        </div>*/}
                     </div>
                 </div>
 
