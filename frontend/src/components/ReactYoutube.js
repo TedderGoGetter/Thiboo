@@ -45,9 +45,12 @@ const ReactYoutube = () => {
         if (e.data === 1) {
             console.log(video)
             console.log(ref1.current)
-            
-            //ref1.current.destroyPlayer()
+            console.log("event", e.target)
+            // e.target.mute()
+            // ref1.current.destroyPlayer()
         }
+
+
 
         // console.log(e.target)
         // e.target.mute()

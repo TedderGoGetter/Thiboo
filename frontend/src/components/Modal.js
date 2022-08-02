@@ -6,6 +6,8 @@ const Modal = ({currentClass}) => {
     const igLogo = new URL('../images/igwhite.png', import.meta.url)
 
 
+
+
     if (currentClass === 'aboutModal') {
         return (
             <div className={currentClass}>
@@ -33,11 +35,12 @@ const Modal = ({currentClass}) => {
                                 <span>THIBAULT</span>
                                 <span>TRESCA</span>
                             </div>
-                            <div className="ownEmail contactGroup">thibault.tresca</div>
-                            <div className="ownEmail2 contactGroup">               @gmail.com</div>
-                            <a href="https://instagram.com/thibault.tresca" target="_blank" rel="noreferrer" className="igLink igs contactGroup"><img className="igLogo igs" src={igLogo} alt="ig:"/> : @thibault.tresca</a>
-                            <div className="tokyoTag ownEmail contactGroup">Tokyo, Japan</div>
+                            <a href="mailto:thibault.tresca@gmail.com" target="_blank" rel="noreferrer" className="ownEmail contactGroup">thibault.tresca <br/>@gmail.com</a>
+                            <a href="https://instagram.com/thibault.tresca" target="_blank" rel="noreferrer" className="igLink igs contactGroup"  ><img className="igLogo igs" src={igLogo} alt="ig:"/> : @thibault.tresca</a>
+                            <div className="tokyoTag contactGroup">Tokyo, Japan</div>
                         </div>
+
+                        {/* unused form */}
                        {/* <div className="screen-body-item">
                             
                             {/* <div className="app-form">

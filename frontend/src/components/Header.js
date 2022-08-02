@@ -18,7 +18,7 @@ function Header({aboutClick, contactClick}) {
             <nav className="header">
         
 
-                <a href="/" target="_blank" onClick={
+                <a className="abtTag" href="/" target="_blank" onClick={
                         (e) => aboutClick(e)
                         }><h3 className='abt' >ABOUT</h3>
                 </a>
@@ -30,14 +30,14 @@ function Header({aboutClick, contactClick}) {
                     <img src={cloud3} alt="" className={"cloud cloud3"}></img>  
                     <img src={cloud4} alt="" className={"cloud cloud4"}></img>                    
                 </div>    
-                
-                    
 
 
-                <a href="/" target="_blank" onClick={
+                <a className="abtTag" href="/" target="_blank" onClick={
                         (e) => contactClick(e)
                     }><h3 className='abt' >CONTACT</h3>
                 </a>
+
+
             </nav>
         
         </div>

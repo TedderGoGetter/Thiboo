@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import NavBar from './components/NavBar'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Modal from './components/Modal'
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <div className="appContainer">
+      <NavBar aboutClick={aboutClick} contactClick={contactClick}/>
       <Header aboutClick={aboutClick} contactClick={contactClick}/>
       <Modal currentClass={currentClass}/>
       <ReactYoutube/>

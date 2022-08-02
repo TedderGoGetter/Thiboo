@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
 
-
 .closedModal {
   height: 40vw;
 }
 
 .aboutModal, .contactModal {
-
   // background-color:pink;
   background-color:rgb(10, 10, 10);
   width: 40vw;
@@ -23,17 +21,12 @@
   animation:aboutOpen 0.8s;
   height: 40vw;
   top: 20%;
-  
 }
 
 .contactModal {
   animation:contactOpen 0.8s;
   height: 28vw;
   top: 30%;
-}
-
-.about {
-  
 }
 
 .portrait {
@@ -46,7 +39,7 @@
 }
 
 .p1 {
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size:1.4em;
   color:rgb(240, 240, 240);
   padding: 10px;
@@ -114,14 +107,8 @@
     font-size: 18px;
     color: #888;
     margin-right:0px;
-  }
+    line-height:1.2;
 
-  .ownEmail2 {
-    text-transform:uppercase;
-    margin-top: 5px;
-    font-size: 16px;
-    color: #888;
-    margin-right:0px;
   }
 
   .contactGroup {
@@ -133,17 +120,36 @@
     height:auto;
     float:left;
     opacity:0.7;
+
+    animation: textIntroIg 1.5s;
   }
 
   .igLink {    
     margin-top: 20px;
     color: #888;
+
+    animation: textIntro 1.5s;
   }
 
+  .ownEmail:hover {
+    color: #eaeaea;
+  }
   
   .igs:hover {
     color: #eaeaea;
-    opacity:1;
+    .igLogo {
+      opacity:1;
+    }
+  }
+
+  .tokyoTag {
+    text-transform:uppercase;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #888;
+    margin-right:0px;
+
+    animation: textIntro 1.5s;
   }
 
   .tokyoTag:after {
@@ -156,6 +162,10 @@
     height: 4px;
     background: #ea1d6f;
   }
+
+  .ownEmail:visited, .ownEmail:focus {
+    color: #888;
+   }
   
 
   .app-title, .ownEmail, .ownEmail2, .app-form-control, .app-form-button {
@@ -202,6 +212,7 @@
   .app-form-button:hover {
     color: #a41247;
   }
+
 
 
 
@@ -257,6 +268,12 @@
     100% {opacity: 1;}
 }
 
+@keyframes textIntroIg {
+  0% {opacity: 0;}
+  70% {opacity: 0;}
+  100% {opacity: 0.7;}
+}
+
 @keyframes blip {
     0% {opacity:0}
 
@@ -268,4 +285,3 @@
     73.4% {opacity:0.6}
     73.8% {opacity:1}
 }
-
