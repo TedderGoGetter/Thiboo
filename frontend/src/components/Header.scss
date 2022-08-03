@@ -28,12 +28,10 @@
   }
 }
 
-
 .abt {
-  margin-top:3.3vw;
+  margin-top:46px;
   align-items: flex-end;
 }
-
 
 .logoContainer {
     position:relative;
@@ -53,14 +51,6 @@
       height: auto;
       top: -60px;
       left: -25px;
-
-
-      // position: absolute;
-      // z-index: -1;
-      // width: 35%;
-      // height: auto;
-      // left: 432px;
-      // top: -60px;
     }
 
     .cloud1 {
@@ -85,40 +75,86 @@
     }
 }
 
+// @media (max-width:974px) {
+//   .abt {
+//     margin-top:4.5vw;
+//   }
+// }
 
 
+//tablet
+@media (max-width:768px) {
+  .abt {
+    margin-top:3.3vw;
+  }
+
+  .headerContainer {
+    width:50vw;
+
+  }
+
+  .logoContainer{
+    top: -27px;
+    left: 15px;
+
+
+    .logo{
+      width:250px;
+      height:auto;
+      left: -50px;
+    }
   
-  // @media screen and (max-width: 520px) {
-  //   .screen-body {
-  //     flex-direction: column;
-  //   }
+    .cloud {
+      width: 130%;
+      top: -40px;
+      left: -76px;
+    }
+  }
+}
+
+@media (max-width:668px) {
+  .logoContainer {
+    left: 35px;
+  }
+}
+
+//phone
+@media (max-width:576px) {
+  .headerContainer {
+    width:50vw;
+
+  }
+
+  .logoContainer{
+    top: -27px;
+    left: 10px;
+
+
+    .logo{
+      width: 200px;
+      height: auto;
+      left: -20px;
+      top: 8px;
+    }
   
-  //   .screen-body-item.left {
-  //     margin-bottom: 30px;
-  //   }
-  
-  //   .app-title {
-  //     flex-direction: row;
-  //   }
-  
-  //   .app-title span {
-  //     margin-right: 12px;
-  //   }
-  
-  //   .app-title:after {
-  //     display: none;
-  //   }
-  // }
-  
-  // @media screen and (max-width: 600px) {
-  //   .screen-body {
-  //     padding: 40px;
-  //   }
-  
-  //   .screen-body-item {
-  //     padding: 0;
-  //   }
-  // }
+    .cloud {
+      width: 130%;
+      top: -28px;
+      left: -36px;
+    }
+  }
+
+
+}
+
+@media (max-width:464px){
+  .logoContainer {
+    left: 42px;
+  }
+}
+
+//Styling for big screens
+
 
 @keyframes wobble {
     0% { transform:  rotate(0deg); }

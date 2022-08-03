@@ -6,7 +6,7 @@ const NavBar = ({aboutClick, contactClick}) => {
     const burg = new URL('../images/hamburgerIvory.png', import.meta.url)
     const burgX = new URL('../images/hamburgerClosedIvory.png', import.meta.url)
 
-    const [currentClass, setCurrentClass] = useState('burgOpen')
+    const [currentClass, setCurrentClass] = useState('burgClosed')
 
     const burgClick = () => {
         if (currentClass === 'burgOpen') setCurrentClass('burgClosed')
