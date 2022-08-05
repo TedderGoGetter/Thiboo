@@ -6,3 +6,9 @@
 .video1, .video2, .video3 {
  padding:30px 40px;
 }
+
+@media (max-width:576) {
+    .youtubeContainer {
+        flex-direction:column;
+    }
+}

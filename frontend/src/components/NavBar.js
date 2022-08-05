@@ -26,14 +26,14 @@ const NavBar = ({aboutClick, contactClick}) => {
                 <div className="navContent">
                     <div className="spaceMaker"></div>
 
-                    <a className="abtTag" href="/" target="_blank" onClick={
+                    <a href="/" target="_blank" onClick={
                             (e) => aboutClick(e)
-                            }><h3 className='abt' >ABOUT</h3>
+                            }><h3 className='navTxt navAbt' >ABOUT</h3>
                     </a>
 
-                    <a className="abtTag" href="/" target="_blank" onClick={
+                    <a href="/" target="_blank" onClick={
                             (e) => contactClick(e)
-                        }><h3 className='cntct' >CONTACT</h3>
+                        }><h3 className='navTxt navCntct' >CONTACT</h3>
                     </a>
                 </div>
             </div>

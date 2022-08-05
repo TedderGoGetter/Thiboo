@@ -1,23 +1,12 @@
-@media (min-width:768px) {
+@media (min-width:577px) {
     .navBar {
         display:none;
     }
 }
 
-@media (max-width:768px) {
-    .navContent {
-        width: 30vw;
-    }
-}
-
-@media (max-width:576px ) {
-    .navContent {
-        width: 36vw;
-    }
-}
-
 .navBar {
     position:absolute;
+    right: 0px;
 }
 
 .navContent {
@@ -26,23 +15,22 @@
 
     font-family: 'Raleway', sans-serif;
     color:rgb(240, 240, 240);
-    font-size: 1.1em;
-
-    height: 62vh;
-    left: -8px;
-    top: -43px;
-    
-    position:absolute;
-    z-index:9;
-
-    border-radius:2px;
+    font-size: 2.2em;
+    height: 100vh;
+    width: 60vw;
+    right: 0px;
+    top: -10px;
+    position: absolute;
+    z-index: 9;
+    border-radius: 2px;
+    text-align: end;
 }
 
 .burgPic, .burgXPic {
-    height:25px;
+    height:70px;
     width:auto;
-
-    position:relative;
+    padding: 10px 15px 0px 10px;
+    position:absolute;
     z-index:10;
 }
 
@@ -60,30 +48,32 @@
         display:none;
     }
     .navContent {
-        animation: slideClose 0.5s;
-        left: -1000px;
+        animation: slideClose 2.5s;
+        // animation-fill-mode: forwards;
+        right: -1000px;
+        // display:none;
     }
 }
 
 .spaceMaker {
-    height: 70px;
-    width:20vw;
-    top:0px;
+    height: 120px;
+    width: 100%;
+    top: 0px;
 }
 
-.abt, .cntct {
-    padding-left:8px;
+.navTxt {
+    padding-right: 5vw;
 }
 
 
 
 
 @keyframes slideClose {
-    0% {left:-8px}
-    100% {left:-500px}
+    0% {right:0px}
+    100% {right:-1000px}
 }
 
 @keyframes slideOpen {
-    0% {left:-500px}
-    100% {left:-8px}
+    0% {right:-1000px}
+    100% {right:0px}
 }

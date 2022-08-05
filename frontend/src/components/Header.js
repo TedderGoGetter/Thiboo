@@ -1,4 +1,5 @@
 import './Header.scss'
+import NavBar from './NavBar'
 
 const mainLogo = new URL('../images/Logotransparent.png', import.meta.url)
 
@@ -13,7 +14,7 @@ function Header({aboutClick, contactClick}) {
 
 
     return (
-        <div className='headerContainer'>
+        <header className='headerContainer'>
 
             <nav className="header">
         
@@ -23,13 +24,13 @@ function Header({aboutClick, contactClick}) {
                         }><h3 className='abt' >ABOUT</h3>
                 </a>
 
-                <div className="logoContainer">
+                {/* <div className="logoContainer">
                     <img src={mainLogo} alt="ThibaultTresca" className='logo'></img>
                     <img src={cloud1} alt="" className={"cloud cloud1"}></img>
                     <img src={cloud2} alt="" className={"cloud cloud2"}></img>
                     <img src={cloud3} alt="" className={"cloud cloud3"}></img>  
                     <img src={cloud4} alt="" className={"cloud cloud4"}></img>                    
-                </div>    
+                </div>     */}
 
 
                 <a className="abtTag" href="/" target="_blank" onClick={
@@ -39,8 +40,10 @@ function Header({aboutClick, contactClick}) {
 
 
             </nav>
-        
-        </div>
+            
+            <NavBar aboutClick={aboutClick} contactClick={contactClick} />
+            
+        </header>
     )
 
 }
