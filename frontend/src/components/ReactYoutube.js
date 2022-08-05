@@ -63,9 +63,9 @@ const ReactYoutube = () => {
     return (
         <div className='youtubeContainer'>
 
-            <YouTube ref={ref1} className="video1" videoId="JDRad1L-Iuk" opts={opts1} onStateChange={e => onStateChange(e, 'video1')}/>
-            <YouTube ref={ref2} className="video2" videoId="OGV5rJ40r4w" opts={opts2} onStateChange={e => onStateChange(e, 'video2')}/>
-            <YouTube ref={ref3} className="video3" videoId="_bbpZvUR4Fk" opts={opts3} onStateChange={e => onStateChange(e, 'video3')}/>
+            <YouTube ref={ref1} className="embed video1" videoId="JDRad1L-Iuk" opts={opts1} onStateChange={e => onStateChange(e, 'video1')}/>
+            <YouTube ref={ref2} className="embed video2" videoId="OGV5rJ40r4w" opts={opts2} onStateChange={e => onStateChange(e, 'video2')}/>
+            <YouTube ref={ref3} className="embed video3" videoId="_bbpZvUR4Fk" opts={opts3} onStateChange={e => onStateChange(e, 'video3')}/>
 
         </div>
     )

@@ -18,10 +18,9 @@ const NavBar = ({aboutClick, contactClick}) => {
         <div className="navBar">
             
             <div className={currentClass} onClick={burgClick}>
-                <div>
-                    <img className="burgPic" src={burg} alt="="/>
-                    <img className="burgXPic" src={burgX} alt="x"/>  
-                </div>
+                <img className="burgPic" src={burg} alt="="/>
+                <img className="burgXPic" src={burgX} alt="x"/>  
+
 
                 <div className="navContent">
                     <div className="spaceMaker"></div>

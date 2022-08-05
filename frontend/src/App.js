@@ -39,7 +39,7 @@ function App() {
     <div className="appContainer">
       <Header aboutClick={aboutClick} contactClick={contactClick}/>
       <Modal currentClass={currentClass}/>
-      {/* <ReactYoutube/> */}
+      <ReactYoutube/>
       <Footer />
     </div>
 

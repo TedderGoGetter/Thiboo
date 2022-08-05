@@ -20,11 +20,26 @@
     }
 }
 
-.li {
+.ln {
     width: 20px;
     padding:4px;
 
     &:hover {
         opacity:0.4;
+    }
+}
+
+@media (max-width:576px){
+    
+    .yt, .ln {
+        padding: 4px 10px 4px 13px;
+        
+    }
+    .yt {
+        width:32px;
+        padding-top: 9px;
+    }
+    .ln {
+        width:31px;
     }
 }

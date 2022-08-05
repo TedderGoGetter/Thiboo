@@ -1,14 +1,22 @@
 .youtubeContainer {
     display:flex;
     justify-content:center;
+
+
 }
 
 .video1, .video2, .video3 {
  padding:30px 40px;
 }
 
-@media (max-width:576) {
+@media (max-width:576px) {
     .youtubeContainer {
         flex-direction:column;
+        padding:0px;
+        max-width:100vw;
+        overflow-x:hidden;
+    }
+    .embed {
+        padding:0px;
     }
 }

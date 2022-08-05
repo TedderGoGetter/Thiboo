@@ -14,7 +14,7 @@ const Footer = () => {
 
             </a>
             <a href="https://www.linkedin.com/in/trescathibault/" target="_blank" rel="noreferrer">
-                <img src={li2} alt="" className="li"></img> 
+                <img src={li2} alt="" className="ln"></img> 
     
             </a>
         </footer>

@@ -2,20 +2,21 @@
 
 .headerContainer {
   display:flex;
-  width:100vw;
-  padding:0px;
-  margin:0px;
+  width:100%;
   justify-content: center;
-}
-
-.header {
-  display:flex;
-  justify-content:space-around;
-  width:60%;
 
   font-family: 'Raleway', sans-serif;
   color:rgb(240, 240, 240);
-  font-size: Clamp(0.7em, 1.1em, 1.1em);
+  font-size: 1.1em;
+
+  position:fixed;
+  z-index: 5;
+}
+
+.desk-header {
+  display:flex;
+  justify-content:space-around;
+  width:60%;
 }
 
 .abt {
@@ -23,46 +24,51 @@
   align-items: flex-end;
 }
 
+.mob-header {
+  width:100%;
+  display:none;
+}
+
 .logoContainer {
+  position:relative;
+  display:flex;
+  
+  .logo{
     position:relative;
-    display:flex;
-    
-    .logo{
-      position:relative;
-      width:350px;
-      height:auto;
-      z-index: 2;
-    }
-    
-    .cloud {
-      position:absolute;
-      z-index:-1;
-      width: 130%;
-      height: auto;
-      top: -60px;
-      left: -25px;
-    }
+    width:350px;
+    height:auto;
+    z-index: 2;
+  }
+  
+  .cloud {
+    position:absolute;
+    z-index:-1;
+    width: 130%;
+    height: auto;
+    top: -60px;
+    left: -25px;
+  }
 
-    .cloud1 {
-      animation:clouds 10s;
-      animation-iteration-count: infinite;
+  .cloud1 {
+    animation:clouds 10s;
+    animation-iteration-count: infinite;
 
-    }
+  }
 
-    .cloud2 {
-      animation:clouds 7s;
-      animation-iteration-count: infinite;
-    }
+  .cloud2 {
+    animation:clouds 7s;
+    animation-iteration-count: infinite;
+  }
 
-    .cloud3 {
-      animation:clouds 5s;
-      animation-iteration-count: infinite;
-    }
+  .cloud3 {
+    animation:clouds 5s;
+    animation-iteration-count: infinite;
+  }
 
-    .cloud4 {
-      animation:clouds 20s;
-      animation-iteration-count: infinite;
-    }
+  .cloud4 {
+    animation:clouds 20s;
+    animation-iteration-count: infinite;
+  }
 }
 
 @media (max-width:974px) {
@@ -71,86 +77,83 @@
   }
 }
 
-
 //phone
 @media (max-width:576px) {
 
-  .abtTag {
+  .desk-header {
     display:none;
+  }
+
+  .mob-header {
+    display:initial;
   }
 
   .headerContainer {
     width:100%;
-  }
-
-  .header {
-    width:100%
+    font-size: 0.9em;
   }
 
   .logoContainer{
-    top: -27px;
-    right:-50px;
+    top: -3.2vh;
+    left: -4vw;
     position:absolute;
 
 
     .logo{
-      width: 450px;
+      width: 350px;
       height: auto;
       top: 8px;
-      background:limegreen;
+      // background:limegreen;
     }
   
     .cloud {
       width: 130%;
-      top: -28px;
-      left: -36px;
+      left: -34px;
+      top: -54px;
     }
   }
-
-
 }
 
-@media (max-width:464px){
-  .logoContainer {
-    left: 42px;
-  }
-}
+// @media (max-width:464px){
+//   .logoContainer {
+//     left: 42px;
+//   }
+// }
 
 //Styling for big screens
 @keyframes wobble {
-    0% { transform:  rotate(0deg); }
-    10% { transform: rotate(-0.1deg); }
-    20% { transform: rotate(0.1deg); }
-    30% { transform: rotate(0deg); }
-    40% { transform: rotate(0.1deg); }
-    50% { transform: rotate(-0.1deg); }
-
-  }
-
+  0% { transform:  rotate(0deg); }
+  10% { transform: rotate(-0.1deg); }
+  20% { transform: rotate(0.1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(0.1deg); }
+  50% { transform: rotate(-0.1deg); }
+}
+  
 @keyframes clouds {
-    0%  {opacity: 0.6}
-    25% {opacity: 1}
-    50% {opacity: 0.4}
-    75% {opacity: 1}
-    100% {opacity: 0.6}
+  0%  {opacity: 0.6}
+  25% {opacity: 1}
+  50% {opacity: 0.4}
+  75% {opacity: 1}
+  100% {opacity: 0.6}
 }
 
 @keyframes cloudsReduce {
-    0%  {opacity: 0.4}
-    25% {opacity: 0.8}
-    50% {opacity: 0.2}
-    75% {opacity: 0.8}
-    100% {opacity: 0.4}
+  0%  {opacity: 0.4}
+  25% {opacity: 0.8}
+  50% {opacity: 0.2}
+  75% {opacity: 0.8}
+  100% {opacity: 0.4}
 }
 
 @keyframes blip {
-    0% {opacity:1}
+  0% {opacity:1}
 
-    20% {opacity:1}
-    20.4% {opacity:0.4}
-    20.8% {opacity:1}
+  20% {opacity:1}
+  20.4% {opacity:0.4}
+  20.8% {opacity:1}
 
-    23% {opacity:1}
-    23.4% {opacity:0.6}
-    23.8% {opacity:1}
+  23% {opacity:1}
+  23.4% {opacity:0.6}
+  23.8% {opacity:1}
 }
