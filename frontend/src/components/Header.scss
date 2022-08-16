@@ -77,6 +77,8 @@
   }
 }
 
+
+
 //phone
 @media (max-width:576px) {
 
@@ -94,33 +96,41 @@
   }
 
   .logoContainer{
-    top: -3.2vh;
-    left: -4vw;
-    position:absolute;
+    top: -4.1vh;
+    left: 4vw;
+    position: absolute;
 
 
     .logo{
-      width: 350px;
+      width: 400px;
       height: auto;
       top: 8px;
-      // background:limegreen;
     }
   
     .cloud {
       width: 130%;
       left: -34px;
-      top: -54px;
     }
   }
 }
 
-// @media (max-width:464px){
-//   .logoContainer {
-//     left: 42px;
-//   }
-// }
+@media (max-width:486px) {
+  .logoContainer{
+    left: -4vw;
+    top: -5vw;
+    .logo {
+      top: 0px;
+      width: 350px;
+    }
+    .cloud {
+      top: -64px;
+      left: -30px;
+    }
+  }
+  }
 
-//Styling for big screens
+
+
 @keyframes wobble {
   0% { transform:  rotate(0deg); }
   10% { transform: rotate(-0.1deg); }

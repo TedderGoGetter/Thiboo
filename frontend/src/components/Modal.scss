@@ -47,30 +47,27 @@
   animation: textIntro 1.5s;
 }
 
-
-//contact form
-  .screen-body, button, input {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-  }
-  
+//contact stuff
   .container {
     flex: 0 1 700px;
     margin: auto;
     padding: 10px;
   }
-
-  .screen-body {
-    display: flex;
-  }
   
-  .screen-body-item {
+  .contact-container, button, input  {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    display: flex;
     flex: 1;
     padding: 50px;
+    width: 100%;
+    overflow-x:hidden;
+    
+
   }
   
-  .screen-body-item.left {
+  .contact-container.left {
     display: flex;
     flex-direction: column;
   }
@@ -160,56 +157,45 @@
     color: #888;
    }
   
-
-  .app-title, .ownEmail, .ownEmail2, .app-form-control, .app-form-button {
+  .app-title, .ownEmail, .app-form-control, .app-form-button {
     animation:textIntro 1.5s;
   }
 
 
-  //unused form stuff.
-  .app-form-group {
-    margin-bottom: 15px;
-    margin-left:0%
-  }
-  
-  .app-form-group.message {
-    margin-top: 40px;
-  }
-  
-  .app-form-group.buttons {
-    margin-bottom: 0;
-    text-align: right;
-  }
-  
-  .app-form-control {
-    width: 100%;
-    padding: 10px 0;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #666;
-    color: #ddd;
-    font-size: 14px;
-    text-transform: uppercase;
-    outline: none;
-  }
-  
-  .app-form-button {
-    background: none;
-    border: none;
-    color: #ea1d6f;
-    font-size: 14px;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .app-form-button:hover {
-    color: #a41247;
+@media (max-width:576px) {
+  .contactModal {
+    height: 40vh;
+    width: 70vw;
+    top: 20%;
+    left: 13%;
+    z-index: 4;
+    overflow-x: hidden;
+
+    .app-title {
+      left: -24%;
+    }
+
+    .contactGroup {
+      margin-left:0%;
+    }
+    .ownEmail{
+      margin-top:13%
+    }
+    .tokyoTag {
+      margin-right: 10vw;
+    }
+    .tokyoTag:after {
+      left: 46vw;
+    }
+
   }
 
+  .contact-container {
+    width: 80%;
+    align-items:center;
+  }
 
-
-
-
+}
 
 @keyframes aboutOpen {
 

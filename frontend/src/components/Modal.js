@@ -28,9 +28,7 @@ const Modal = ({currentClass}) => {
             
             <div className={currentClass}>
 
-                <div className="contact">
-                    <div className="screen-body">
-                        <div className="screen-body-item left">
+                        <div className="contact-container left">
                             <div className="app-title">
                                 <span>THIBAULT</span>
                                 <span>TRESCA</span>
@@ -39,30 +37,6 @@ const Modal = ({currentClass}) => {
                             <a href="https://instagram.com/thibault.tresca" target="_blank" rel="noreferrer" className="igLink igs contactGroup"  ><img className="igLogo igs" src={igLogo} alt="ig:"/> : @thibault.tresca</a>
                             <div className="tokyoTag contactGroup">Tokyo, Japan</div>
                         </div>
-
-                        {/* unused form */}
-                       {/* <div className="screen-body-item">
-                            
-                            {/* <div className="app-form">
-                                <div className="app-form-group">
-                                    <input className="app-form-control" placeholder="NAME" value="Tupac Shakur"/>
-                                    <input className="app-form-control" placeholder="EMAIL"/>
-                                    <input className="app-form-control" placeholder="CONTACT NO"/>
-                                </div>
-                                <div className="app-form-group message">
-                                    <input className="app-form-control" placeholder="MESSAGE"/>
-                                </div>
-                                <div className="app-form-group buttons">
-                                    <button className="app-form-button">SEND</button> 
-                                </div>
-                            </div>
-                        </div>*/}
-                    </div>
-                </div>
-
-
-
-
             </div>
         )
     }
