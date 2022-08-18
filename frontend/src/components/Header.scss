@@ -10,7 +10,6 @@
   font-size: 1.1em;
 
   position:fixed;
-  z-index: 5;
 }
 
 .desk-header {
@@ -32,6 +31,7 @@
 .logoContainer {
   position:relative;
   display:flex;
+  z-index: 1;
   
   .logo{
     position:relative;
