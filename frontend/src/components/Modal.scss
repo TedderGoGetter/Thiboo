@@ -7,39 +7,42 @@
 .aboutModal, .contactModal {
   background-color:rgb(10, 10, 10);
   width: 40vw;
-  z-index:5;
 
   position:absolute;
   left: 30%;
 
   border-radius: 10px;
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  z-index: 4;
 }
 
 .aboutModal {
-  animation:aboutOpen 0.8s;
-  height: 40vw;
+  animation: aboutOpen 0.8s;
+  height: 64vh;
+  width: 55vw;
   top: 20%;
+  left: 24%;
 }
 
 .contactModal {
-  animation:contactOpen 0.8s;
-  height: 28vw;
-  top: 30%;
+  animation: aboutOpen 0.8s;
+  height: 60vh;
+  width: 57vw;
+  left: 24%;
+  top: 20%;
 }
 
 .portrait {
   height: 20vw;
   width: auto;
   float: right;
-  padding: 25px 25px 25px 5px;
-
+  padding: 9px 3vw 25px 5px;
   animation: blip 1.8s;
 }
 
 .p1 {
   font-family: 'Raleway', sans-serif;
-  font-size:1.4em;
+  font-size:1.3em;
   color:rgb(240, 240, 240);
   padding: 10px;
   padding-top:4px;
@@ -193,6 +196,27 @@
   .contact-container {
     width: 80%;
     align-items:center;
+  }
+
+  .aboutModal {
+    height: 65vh;
+    width: 80vw;
+    left: 12%;
+    top: 10%;
+    font-size: 0.86em;
+    line-height: 160%;
+
+    .portrait {
+      height: 43vw;
+      padding: 8px 15px 2px 5px;
+    }
+  }
+
+}
+
+@media (min-width:1000px) {
+  .p1 {
+    font-size:1.55em;
   }
 
 }

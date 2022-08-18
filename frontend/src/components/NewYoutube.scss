@@ -1,0 +1,11 @@
+.youtube-container {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    
+    margin: 0;
+    position: fixed;
+    top: 48%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

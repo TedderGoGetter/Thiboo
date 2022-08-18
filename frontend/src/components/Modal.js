@@ -2,7 +2,7 @@ import './Modal.scss'
 
 const Modal = ({currentClass}) => {
 
-    const terryCrews = new URL('../images/TerryCrews.jpg', import.meta.url)
+    const portrait = new URL('../images/portrait.jpg', import.meta.url)
     const igLogo = new URL('../images/igwhite.png', import.meta.url)
 
 
@@ -13,8 +13,8 @@ const Modal = ({currentClass}) => {
             <div className={currentClass}>
 
                 <div className="about">
-                    <img src={terryCrews} alt="" className="portrait"/>
-                    <p className="p1">Terry Alan Crews born July 30, 1968 is an American actor, television host, and former American football linebacker. He played Julius Rock in the UPN/CW sitcom Everybody Hates Chris, which aired from 2005 to 2009, and portrayed Terry Jeffords in the Fox and NBC sitcom Brooklyn Nine-Nine 2013–2021.</p>
+                    <img src={portrait} alt="" className="portrait"/>
+                    <p className="p1">Thibault Tresca is an emerging music video director and animator based in Tokyo. After getting a masters degree in 3D animation at DSK Supinfocom Rubika he made his directorial debut on Leon Fanourakis’ song Lamar in 2019. Since then Thibault has been making his way through the ranks shooting videos for the likes of SEEDA, YamieZimmer and week dudus. His guerilla shooting style combined with flashy animation has been heavily sought after and his every next project is bigger than the last.</p>
                 </div>
             </div>
         )

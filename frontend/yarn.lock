@@ -1972,6 +1972,15 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
+"@types/react@^17.0.0":
+  version "17.0.48"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.48.tgz#a4532a8b91d7b27b8768b6fc0c3bccb760d15a6c"
+  integrity sha512-zJ6IYlJ8cYYxiJfUaZOQee4lh99mFihBoqkOSEGV+dFi9leROW6+PgstzQ+w3gWTnUfskALtQPGHK6dYmPj+2A==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
 "@types/resolve@1.17.1":
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-1.17.1.tgz#3afd6ad8967c77e4376c598a82ddd58f46ec45d6"
@@ -2053,6 +2062,11 @@
   integrity sha512-gmEaFwpj/7f/ROdtIlci1R1VYU1J4j95m8T+Tj3iBgiBFKg1foE/PSl93bBd5T9LDXNPo8UlNN6W0qwD8O5OaA==
   dependencies:
     "@types/yargs-parser" "*"
+
+"@types/youtube@0.0.46":
+  version "0.0.46"
+  resolved "https://registry.yarnpkg.com/@types/youtube/-/youtube-0.0.46.tgz#925afdf741f35279114da7c58c98013868a949f5"
+  integrity sha512-Yf1Y4bDj/QIn8v+zdy0l7+OW6s1uoUvzVn5cGqPNCsL4iUW4gYUlIdQIRtH9NOHVgwZNLbVeeRDEn6N4RMq6Nw==
 
 "@typescript-eslint/eslint-plugin@^5.5.0":
   version "5.30.4"
@@ -2140,6 +2154,16 @@
   dependencies:
     "@typescript-eslint/types" "5.30.4"
     eslint-visitor-keys "^3.3.0"
+
+"@u-wave/react-youtube@^0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@u-wave/react-youtube/-/react-youtube-0.7.4.tgz#dd56bb2150830f16b4b7071d847b57201f8874da"
+  integrity sha512-MfWydBZoKXaLK+qRO2RCyVP917urfjN1VW7NbVcn2rxBXDGwBBGX4fY6GhnEjPuszisM7Odid2sre3+yxegInw==
+  dependencies:
+    "@types/react" "^17.0.0"
+    "@types/youtube" "0.0.46"
+    load-script2 "^1.0.1"
+    prop-types "^15.7.2"
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
@@ -5797,6 +5821,11 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
+load-script2@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/load-script2/-/load-script2-1.0.1.tgz#fd7d75987d0a7dbeab5b11f93581b9154a04eac1"
+  integrity sha512-36d/FxKtirfX9ALoQ+GXX4Hub+q3LdwFtgFXsj5Jc4TEfNPckDHN7YKCm0zTTnmcGHzjWlbHvIUb7+CtI7LFhA==
+
 load-script@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
@@ -7095,7 +7124,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@15.8.1, prop-types@^15.8.1:
+prop-types@15.8.1, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
