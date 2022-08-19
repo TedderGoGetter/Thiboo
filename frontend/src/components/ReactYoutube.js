@@ -8,9 +8,15 @@ const ReactYoutube = () => {
     const [embedSize2, setEmbedSize2] = useState([256,154])
     const [embedSize3, setEmbedSize3] = useState([256,154])
 
-    const ref1 = useRef()
-    const ref2 = useRef()
-    const ref3 = useRef()
+    const ref1 = useRef(null)
+    const ref2 = useRef(null)
+    const ref3 = useRef(null)
+
+    const storeEffect = (e, ref) => {
+        ref.current = e
+    }
+
+    
 
     const opts1 = {
         height: embedSize1[1],
@@ -44,8 +50,12 @@ const ReactYoutube = () => {
 
         if (e.data === 1) {
             console.log(video)
-            console.log(ref1.current)
-            console.log("event", e.target)
+            console.log("ref", ref1.current.target)
+            // console.log("event", e.target)
+            // console.log("playerstate", ref1.Youtube.PlayerState)
+            
+            ref1.current.target.playVideo()
+
             // e.target.mute()
             // ref1.current.destroyPlayer()
         }
@@ -63,9 +73,9 @@ const ReactYoutube = () => {
     return (
         <div className='youtubeContainer'>
 
-            <YouTube ref={ref1} className="embed video1" videoId="JDRad1L-Iuk" opts={opts1} onStateChange={e => onStateChange(e, 'video1')}/>
-            <YouTube ref={ref2} className="embed video2" videoId="OGV5rJ40r4w" opts={opts2} onStateChange={e => onStateChange(e, 'video2')}/>
-            <YouTube ref={ref3} className="embed video3" videoId="_bbpZvUR4Fk" opts={opts3} onStateChange={e => onStateChange(e, 'video3')}/>
+            <YouTube onReady={e => storeEffect(e, ref1)} className="embed video1" videoId="JDRad1L-Iuk" opts={opts1} onStateChange={e => onStateChange(e, 'video1')}/>
+            <YouTube onReady={e => storeEffect(e, ref2)} className="embed video2" videoId="OGV5rJ40r4w" opts={opts2} onStateChange={e => onStateChange(e, 'video2')}/>
+            <YouTube onReady={e => storeEffect(e, ref3)} className="embed video3" videoId="_bbpZvUR4Fk" opts={opts3} onStateChange={e => onStateChange(e, 'video3')}/>
 
         </div>
     )
