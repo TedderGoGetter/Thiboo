@@ -1,17 +1,28 @@
-.youtubeContainer {
+.youtube-container {
     display:flex;
     justify-content:center;
     width: 100%;
-
-    margin: 0;
     position: fixed;
     top: 48%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
-.video1, .video2, .video3 {
- padding:30px 40px;
+.button-container {
+    display:flex;
+    justify-content:center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 75%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    .mute{
+        width: 25px;
+        height:auto;
+        padding: 0px 120px;
+    }
 }
 
 @media (max-width:576px) {
