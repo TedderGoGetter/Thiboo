@@ -5,10 +5,6 @@ import './ReactYoutube.scss'
 const ReactYoutube = () => {
 
     const [embedSize, setEmbedSize] = useState([[256,154],[256,154],[256,154]])
-    
-    const [embedSize1, setEmbedSize1] = useState([256,154])
-    const [embedSize2, setEmbedSize2] = useState([256,154])
-    const [embedSize3, setEmbedSize3] = useState([256,154])
 
     const vidRef = useRef([])
 
@@ -20,8 +16,8 @@ const ReactYoutube = () => {
             className:"embed video1",
             videoId:"JDRad1L-Iuk",
             opts:{
-                height: embedSize1[1],
-                width: embedSize1[0],
+                height: embedSize[0][1],
+                width: embedSize[0][0],
                 playerVars: {
                   // https://developers.google.com/youtube/player_parameters
                   mute:1,
@@ -36,8 +32,8 @@ const ReactYoutube = () => {
             className:"embed video2",
             videoId:"OGV5rJ40r4w",
             opts:{
-                height: embedSize2[1],
-                width: embedSize2[0],
+                height: embedSize[1][1],
+                width: embedSize[1][0],
                 playerVars: {
                   // https://developers.google.com/youtube/player_parameters
                   mute:1,
@@ -52,8 +48,8 @@ const ReactYoutube = () => {
             className:"embed video3",
             videoId:"_bbpZvUR4Fk",
             opts:{
-                height: embedSize3[1],
-                width: embedSize3[0],
+                height: embedSize[2][1],
+                width: embedSize[2][0],
                 playerVars: {
                   // https://developers.google.com/youtube/player_parameters
                   mute:1,
@@ -72,9 +68,11 @@ const ReactYoutube = () => {
        muteArray.forEach((item, i) => {
         if (item) vidRef.current[i]?.target.unMute()
         if (!item) vidRef.current[i]?.target.mute()
-        console.log("vidref current", vidRef.current[i])
-       })
-    }, [muteArray])
+       
+       }, [muteArray])
+
+       
+    })
 
     const storeEffect = (e, i) => {
         vidRef.current[i] = e
