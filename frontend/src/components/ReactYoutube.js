@@ -16,8 +16,8 @@ const ReactYoutube = () => {
             className:"embed video1",
             videoId:"JDRad1L-Iuk",
             opts:{
-                height: embedSize[0][1],
-                width: embedSize[0][0],
+                height: 154,
+                width: 256,
                 playerVars: {
                   // https://developers.google.com/youtube/player_parameters
                   mute:1,
@@ -32,8 +32,8 @@ const ReactYoutube = () => {
             className:"embed video2",
             videoId:"OGV5rJ40r4w",
             opts:{
-                height: embedSize[1][1],
-                width: embedSize[1][0],
+                height: 154,
+                width: 256,
                 playerVars: {
                   // https://developers.google.com/youtube/player_parameters
                   mute:1,
@@ -48,8 +48,8 @@ const ReactYoutube = () => {
             className:"embed video3",
             videoId:"_bbpZvUR4Fk",
             opts:{
-                height: embedSize[2][1],
-                width: embedSize[2][0],
+                height: 154,
+                width: 256,
                 playerVars: {
                   // https://developers.google.com/youtube/player_parameters
                   mute:1,
@@ -66,7 +66,11 @@ const ReactYoutube = () => {
     useEffect(() => {
 
        muteArray.forEach((item, i) => {
-        if (item) vidRef.current[i]?.target.unMute()
+        if (item) {
+            vidRef.current[i]?.target.unMute()
+
+        }
+
         if (!item) vidRef.current[i]?.target.mute()
        
        }, [muteArray])
@@ -81,8 +85,18 @@ const ReactYoutube = () => {
 
     const muteButtonClick = (num) => {
 
+        let newVidArr = [...videos]
+
         const newArray = muteArray.map((item, i) => {
-            if (num === i) return !item
+            if (num === i) {
+                newVidArr[i] = item
+                    ? {...newVidArr[i], opts: {...newVidArr[i].opts, height: 154, width: 256}}
+                    : {...newVidArr[i], opts: {...newVidArr[i].opts, height: 244, width: 400}}
+                return !item
+
+                //og size is h390 w640
+            }
+            newVidArr[i] = {...newVidArr[i], opts: {...newVidArr[i].opts, height: 154, width: 256}}
             return false
         })
 
@@ -91,8 +105,10 @@ const ReactYoutube = () => {
             return ([256,154])
         })
 
+        //640,390
+
         setMuteArray(newArray)
-        setEmbedSize(sizeArray)
+        setVideos(newVidArr)
 
         console.log('sizeArray', sizeArray)
         console.log('embedSize', embedSize)

@@ -86,6 +86,10 @@
     display:none;
   }
 
+  .abt {
+    margin-top:47px;
+  }
+
   .mob-header {
     display:initial;
   }
@@ -127,7 +131,34 @@
       left: -30px;
     }
   }
+}
+
+@media (min-width:1900px){ 
+  .headerContainer { 
+    font-size: 1.9em;
   }
+
+  .abt {
+    margin-top: 67px;
+  }
+
+  .logoContainer {
+    
+    .logo{
+      width:550px;
+    }
+    
+    .cloud {
+      width: 130%;
+      top: -100px;
+      left: -55px;
+    }
+  }
+}
+
+
+
+
 
 
 
