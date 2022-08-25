@@ -86,7 +86,17 @@ const ReactYoutube = () => {
             return false
         })
 
+        const sizeArray = newArray.map((item, i) => {
+            if (item === true) return ([640,390])
+            return ([256,154])
+        })
+
         setMuteArray(newArray)
+        setEmbedSize(sizeArray)
+
+        console.log('sizeArray', sizeArray)
+        console.log('embedSize', embedSize)
+
     }
 
     const muteButton = (bool) => {     

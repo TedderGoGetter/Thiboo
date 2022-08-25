@@ -59,7 +59,7 @@
     padding: 10px;
   }
   
-  .contact-container, button, input  {
+  .contact-container  {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -68,8 +68,6 @@
     padding: 50px;
     width: 100%;
     overflow-x:hidden;
-    
-
   }
   
   .contact-container.left {
@@ -166,6 +164,28 @@
     animation:textIntro 1.5s;
   }
 
+@media (max-height:496px) {
+  .aboutModal {
+    height: 80vh;
+  }
+}
+
+@media (max-height:410px) {
+  .p1 {
+    font-size:0.9em;
+  }
+}
+
+@media (max-height:340px) {
+  .p1 {
+    font-size:0.8em;
+  }
+  .aboutModal {
+    height: 100vh;
+  }
+}
+
+
 
 @media (max-width:576px) {
 
@@ -224,7 +244,7 @@
 
 //optimization for bigger screens
 
-@media (min-width:750px) {
+@media (min-width:750px) and (max-width:1199px) {
   .contactModal {
     left: 25%;
     top: 25%;
@@ -244,7 +264,7 @@
   }
 }
 
-@media (min-width:1000px) {
+@media (min-width:1200px) and (max-width:1499px) {
 
   .contactModal {
     left: 29%;
@@ -263,23 +283,97 @@
     left: 25%;
 
     .p1 {
-      font-size:1.2em;
+      font-size:1.4em;
       padding-top: -3px;
     }
   }
-
-  
-
 }
 
-@media (min-width:1000px) and (min-height:1000px) {
-  .p1 {
-    font-size:1.55em;
+@media (min-width:1500px) and (max-width:1899px) {
+
+  .contactModal {
+    left: 29%;
+    top: 25%;
+    width: 40vw;
+    
+    .contactGroup {
+      margin-left: 30%;
+    }
   }
 
-  
+  .aboutModal {
+    width:40vw;
+    left: 30%;
+  }
 
+  .p1 {
+    font-size:1.4em;
+    padding-top: -3px;
+  }
 }
+
+@media (min-width:1900px){
+  .contactModal {
+    left: 33%;
+    top: 25%;
+    width: 32vw;
+    height: 20vw;
+
+    .contactGroup {
+      margin-left: 38%;
+    }
+
+    .ownEmail {
+      margin-top: 20px;
+      font-size: 26px;
+      margin-right:0px;
+      line-height:1.2;
+    }
+
+    .igLogo {
+      width:24px;
+      opacity:0.7;
+    }
+  
+    .igLink {    
+      margin-top: 20px;
+      font-size: 26px;
+    }
+    
+    .tokyoTag {
+      font-size: 26px;
+    }
+    
+    .tokyoTag:after {
+      left: 22.8vw;
+      width: 43px;
+      height: 6px;
+    }
+
+    .app-title {
+      font-size: 33px;
+      margin-left: 20px;
+    }
+
+    .app-title:after{
+      width: 43px;
+      height: 6px;
+    }
+  }
+
+  .aboutModal {
+    width:40vw;
+    height:60vh;
+    left: 30%;
+  }
+
+  .p1 {
+    font-size:1.5em;
+    padding-top: -3px;
+  }
+}
+
+
 
 @keyframes aboutOpen {
 
