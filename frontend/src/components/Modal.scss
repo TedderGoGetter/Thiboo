@@ -164,6 +164,10 @@
     animation:textIntro 1.5s;
   }
 
+  .closer {
+    display:none;
+  }
+
 @media (max-height:496px) {
   .aboutModal {
     height: 80vh;
@@ -240,6 +244,16 @@
     }
   }
 
+  .closer {
+    height: 150vh;
+    width: 150vw;
+    background: white;
+    display: initial;
+    position: absolute;
+    bottom: -190px;
+    left: -50px;
+    z-index: -1;
+  }
 }
 
 //optimization for bigger screens

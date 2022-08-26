@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="appContainer">
       <Header aboutClick={aboutClick} contactClick={contactClick}/>
-      <Modal currentClass={currentClass}/>
+      <Modal currentClass={currentClass} aboutClick={aboutClick} contactClick={contactClick} />
       <ReactYoutube/>
       {/* <NewYoutube/> */}
       <Footer />
