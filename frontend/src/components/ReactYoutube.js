@@ -68,7 +68,6 @@ const ReactYoutube = () => {
        muteArray.forEach((item, i) => {
         if (item) {
             vidRef.current[i]?.target.unMute()
-
         }
 
         if (!item) vidRef.current[i]?.target.mute()
@@ -104,8 +103,6 @@ const ReactYoutube = () => {
             if (item === true) return ([640,390])
             return ([256,154])
         })
-
-        //640,390
 
         setMuteArray(newArray)
         setVideos(newVidArr)

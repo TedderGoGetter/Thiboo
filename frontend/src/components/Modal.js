@@ -1,11 +1,10 @@
 import './Modal.scss'
+import React from 'react'
 
 const Modal = ({currentClass, aboutClick, contactClick}) => {
 
     const portrait = new URL('../images/portrait.jpg', import.meta.url)
     const igLogo = new URL('../images/igwhite.png', import.meta.url)
-
-
 
 
     if (currentClass === 'aboutModal') {

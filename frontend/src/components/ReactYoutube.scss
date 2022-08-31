@@ -12,23 +12,15 @@
 .button-container {
     display: flex;
     position: relative;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    // margin-left: 250px;
-    // margin-right: 250px;
     top: 67vh;
-
-
-
+    gap: 240px;
 
     .mute{
         width: 25px;
     }
 }
-
-// .button-container:first-cild {
-//     background:white;
-// }
 
 @media (max-width:576px) {
     .youtube-container {
@@ -47,6 +39,7 @@
 
         flex-direction:column;
         top: 20vh;
+        gap: 0px;
 
         .mute {
             width:256px;
@@ -59,6 +52,15 @@
 
 }
 
+@media (min-width:1000px) and(min-height:650px) {
+    .youtube-container {
+        top: 44%;
+    }
+    .button-container {
+        top: 59vh;
+    }
+}
+
 
 @media (min-width:1900px){ 
     
@@ -66,12 +68,14 @@
         top: 40%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
+        gap: 37px;
     }
     
     .button-container {
         margin-left: 300px;
         margin-right: 300px;
         top: 60vh;
+        gap: 380px;
     
         .mute{
             width: 40px;

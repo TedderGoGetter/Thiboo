@@ -29,9 +29,6 @@ function App() {
     console.log("Contact clicked")
   }
 
-
-
-
       
 
 
@@ -40,7 +37,6 @@ function App() {
       <Header aboutClick={aboutClick} contactClick={contactClick}/>
       <Modal currentClass={currentClass} aboutClick={aboutClick} contactClick={contactClick} />
       <ReactYoutube/>
-      {/* <NewYoutube/> */}
       <Footer />
     </div>
 
