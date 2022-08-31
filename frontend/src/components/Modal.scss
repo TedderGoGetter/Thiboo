@@ -26,12 +26,16 @@
 }
 
 .contactModal {
-  animation: aboutOpen 0.8s;
+  animation: contactOpen 0.8s;
   // height: 60vh;
   width: 57vw;
   left: 20%;
   top: 20%;
   z-index:5;
+}
+
+.abtTag {
+  z-index: 10;
 }
 
 .portrait {
@@ -171,6 +175,7 @@
 @media (max-height:496px) {
   .aboutModal {
     height: 80vh;
+    animation: mobileModal 0.8s;
   }
 }
 
@@ -186,6 +191,7 @@
   }
   .aboutModal {
     height: 100vh;
+    animation: mobileModal 0.8s;
   }
 }
 
@@ -204,6 +210,7 @@
     left: 13%;
     z-index: 4;
     overflow-x: hidden;
+    animation: mobileModal 0.8s;
 
     .app-title {
       left: -24%;
@@ -238,6 +245,8 @@
     line-height: 160%;
     z-index: 4;
 
+    animation: mobileModal 0.8s;
+
     .portrait {
       height: 43vw;
       padding: 8px 15px 2px 5px;
@@ -260,9 +269,10 @@
 
 @media (min-width:750px) and (max-width:1199px) {
   .contactModal {
-    left: 25%;
+    left: 27%;
     top: 25%;
     width: 47vw;
+    height: 37vh;
     
     .contactGroup {
       margin-left: 30%;
@@ -284,6 +294,7 @@
     left: 29%;
     top: 25%;
     width: 40vw;
+    animation: contactOpen1200 0.8s;
     
     .contactGroup {
       margin-left: 30%;
@@ -295,6 +306,8 @@
     width: 49vw;
     top: 20%;
     left: 25%;
+    animation: aboutOpen1200 0.8s;
+
 
     .p1 {
       font-size: 1.35em;
@@ -306,9 +319,10 @@
 @media (min-width:1500px) and (max-width:1899px) {
 
   .contactModal {
-    left: 29%;
+    left: 35.3%;
     top: 25%;
-    width: 40vw;
+    width: 30vw;
+    animation: contactOpen1500 0.8s;
     
     .contactGroup {
       margin-left: 30%;
@@ -318,6 +332,7 @@
   .aboutModal {
     width:40vw;
     left: 30%;
+    animation: aboutOpen1500 0.8s;
   }
 
   .p1 {
@@ -332,6 +347,7 @@
     top: 25%;
     width: 32vw;
     height: 20vw;
+    animation: contactOpen1900 0.8s;
 
     .contactGroup {
       margin-left: 38%;
@@ -379,6 +395,7 @@
     width:40vw;
     height:58vh;
     left: 30.7%;
+    animation: aboutOpen1900 0.8s;
   }
 
   .p1 {
@@ -392,45 +409,193 @@
 @keyframes aboutOpen {
 
     0% {
-        height: 0vw;
-        width: 5vw;
-        top: 12%;
-        left: 25%;
+      height: 0vw;
+      width: 5vw;
+      top: 12%;
+      left: 25%;
     }
 
     50% {
-        height: 10vw;
-        width: 20px;
-        top: 40%;
-        left: 40%; 
+      height: 10vw;
+      width: 20px;
+      top: 40%;
+      left: 40%; 
     }
 
     100% {
-        width: 40vw;
-        height: 40vw;
+      height: 67vh;
+      width: 55vw;
     }
+}
+
+@keyframes aboutOpen1200 {
+
+  0% {
+    height: 0vw;
+    width: 5vw;
+    top: 12%;
+    left: 25%;
+  }
+
+  50% {
+    height: 10vw;
+    width: 20px;
+    top: 40%;
+    left: 40%; 
+  }
+
+  100% {
+    height: 67vh;
+    width: 49vw;
+  }
+}
+
+@keyframes aboutOpen1500 {
+
+  0% {
+    height: 0vw;
+    width: 5vw;
+    top: 12%;
+    left: 25%;
+  }
+
+  50% {
+    height: 10vw;
+    width: 20px;
+    top: 40%;
+    left: 40%; 
+  }
+
+  100% {
+    height: 67vh;
+    width:40vw;
+    left:30%;
+  }
+}
+
+@keyframes aboutOpen1900 {
+
+  0% {
+    height: 0vw;
+    width: 5vw;
+    top: 12%;
+    left: 25%;
+  }
+
+  50% {
+    height: 10vw;
+    width: 20px;
+    top: 40%;
+    left: 40%; 
+  }
+
+  100% {
+    width:40vw;
+    height:58vh;
+    left: 30.7%;
+  }
 }
 
 @keyframes contactOpen {
 
   0% {
-      height: 0vw;
-      width: 5vw;
-      top: 12%;
-      left: 75%;
+    height: 0vw;
+    width: 5vw;
+    top: 12%;
+    left: 75%;
   }
 
   50% {
-      height: 10vw;
-      width: 20px;
-      top: 40%;
-      left: 60%; 
+    height: 10vw;
+    width: 20px;
+    top: 40%;
+    left: 60%; 
   }
 
   100% {
-      width: 40vw;
-      height: 28vw;
+    left: 27%;
+    top: 25%;
+    width: 47vw;
+    height: 37vh;
   }
+}
+
+@keyframes contactOpen1200 {
+
+  0% {
+    height: 0vw;
+    width: 5vw;
+    top: 12%;
+    left: 75%;
+  }
+
+  50% {
+    height: 10vw;
+    width: 20px;
+    top: 40%;
+    left: 60%; 
+  }
+
+  100% {
+    left: 29%;
+    top: 25%;
+    width: 40vw;
+    height: 37vh;
+  }
+}
+
+@keyframes contactOpen1500 {
+
+  0% {
+    height: 0vw;
+    width: 5vw;
+    top: 12%;
+    left: 75%;
+  }
+
+  50% {
+    height: 10vw;
+    width: 20px;
+    top: 40%;
+    left: 60%; 
+  }
+
+  100% {
+    left: 35.3%;
+    top: 25%;
+    width: 30vw;
+    height: 33vh;
+  }
+}
+
+@keyframes contactOpen1900 {
+
+  0% {
+    height: 0vw;
+    width: 5vw;
+    top: 12%;
+    left: 75%;
+  }
+
+  50% {
+    height: 10vw;
+    width: 20px;
+    top: 40%;
+    left: 60%; 
+  }
+
+  100% {
+    left: 33%;
+    top: 25%;
+    width: 32vw;
+    height: 20vw;
+  }
+}
+
+@keyframes mobileModal {
+  0% {opacity: 0}
+  50% {opacity: 0.3}
+  100% {opacity: 1}
 }
 
 @keyframes textIntro {
