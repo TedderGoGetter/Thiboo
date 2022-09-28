@@ -9,10 +9,7 @@ const cloud3 = new URL('../images/Cloud3.png', import.meta.url)
 const cloud4 = new URL('../images/Cloud4.png', import.meta.url)
 
 function Header({aboutClick, contactClick}) {
-
-
-
-
+    
     return (
         <header className='headerContainer'>
 

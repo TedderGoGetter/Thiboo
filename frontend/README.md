@@ -4,6 +4,8 @@ Cd into frontend
 Run 'npm install'
 Then 'yarn start'
 
+Find it deployed at https://thiboo.vercel.app
+
 
 # Getting Started with Create React App
 

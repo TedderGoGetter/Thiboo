@@ -2,7 +2,6 @@ import './NavBar.scss'
 import {useState} from 'react'
 
 const NavBar = ({aboutClick, contactClick}) => {
-
     const burg = new URL('../images/hamburgerIvory.png', import.meta.url)
     const burgX = new URL('../images/hamburgerClosedIvory.png', import.meta.url)
 

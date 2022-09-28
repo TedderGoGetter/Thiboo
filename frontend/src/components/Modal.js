@@ -2,7 +2,6 @@ import './Modal.scss'
 import React from 'react'
 
 const Modal = ({currentClass, aboutClick, contactClick}) => {
-
     const portrait = new URL('../images/portrait.jpg', import.meta.url)
     const igLogo = new URL('../images/igwhite.png', import.meta.url)
 
@@ -23,8 +22,6 @@ const Modal = ({currentClass, aboutClick, contactClick}) => {
 
         
         return (
-
-            
             <div className={currentClass}>
                 <div className="closer" onClick={contactClick}> </div>
                 <div className="contact-container left">
