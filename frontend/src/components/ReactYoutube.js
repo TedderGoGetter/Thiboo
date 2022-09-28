@@ -130,7 +130,7 @@ const ReactYoutube = () => {
             <div className='button-container'>
 
                 {muteArray.map((mute, i) => (
-                    <svg onClick={() => muteButtonClick(i)} xmlns="http://www.w3.org/2000/svg" className="mute" viewBox="0 0 20 20" fill="#faebd7">
+                    <svg onClick={() => muteButtonClick(i)} xmlns="https://www.w3.org/2000/svg" className="mute" viewBox="0 0 20 20" fill="#faebd7">
                         <path fillRule="evenodd" d={muteButton(mute)} clipRule="evenodd" />
                     </svg>
                 ))}

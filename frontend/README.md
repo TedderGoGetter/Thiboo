@@ -1,3 +1,10 @@
+Notes from Tedz:
+
+Cd into frontend
+Run 'npm install'
+Then 'yarn start'
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
