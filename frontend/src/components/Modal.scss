@@ -172,6 +172,11 @@
     display:none;
   }
 
+  .modalWrapper {
+    height: 100vh;
+    width: 100vw;
+  }
+
 @media (max-height:496px) {
   .aboutModal {
     height: 80vh;
